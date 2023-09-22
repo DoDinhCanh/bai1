@@ -1,0 +1,13 @@
+.test {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: chance 5s infinite;
+}
+@keyframes chance {
+    0% {background-color: red;top:0; left: 0;}
+    25%{background-color: blue;top:0; left: 100px;}
+    50% {background-color: green; top: 100px;left: 100px;}
+    100% {background-color: yellow;top:100px ;left: 0px;}
+}

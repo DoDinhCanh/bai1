@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+}
+nav {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+}
+.content-1 {
+    display: flex;
+    gap: 32px;
+}
+.item-1{
+    display: flex;
+    align-items: center;
+}
+article a h3 {
+    font-size: 30px;
+}
+article p {
+    margin: 32px 0;
+}
+button{
+    background-color: yellow;
+    color: white;
+    padding: 16px;
+    border: none;
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 32px;
+}
+.content-2{
+    display: flex;
+    gap: 32px;
+}
+.item{
+    text-align: center;
+}
+.item button{
+    width: 100%;
+    background-color: black;
+}
+.chance {
+    display: none;
+}
+
+.img-item img{
+    width: 448px;
+    height: 546px;
+    transition: height 2s ;
+}
+.img-item img:hover {
+    height: 460px;
+}
+.item:hover .chance{
+    display: block;
+    animation: chance 2s;
+    position: relative;
+}
+@keyframes chance {
+    0%{opacity: 0.3;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #021A34;
+    padding: 16px;margin: 64px 0;
+}
+footer p {
+    color: white;
+}
+.email input {
+    padding: 16px;
+}
